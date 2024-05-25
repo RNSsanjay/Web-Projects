@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Shopping Website</title>
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to RNS Agri Helpers.</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+             <li><a href="#">Details</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Your Cart</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Product 1</td>
+                    <td>$19.99</td>
+                    <td>2</td>
+                    <td>$39.98</td>
+                </tr>
+                </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>$39.98</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="cart-buttons">
+            <a href="home.html" class="button">Continue Shopping</a>
+            <a onclick="Thankyou()" class="button checkout">Proceed to Checkout</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; RNS @ My Agri Shopping Website</p>
+        </footer>
+        <script>
+            function Thankyou(){
+                window.alert("Thank You Visiting our Website.Come Again Soon.....")
+            }
+        </script>
+</body>
+</html>
